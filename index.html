@@ -65,6 +65,7 @@
 
     <main id="conteudo">
       <section class="hero">
+        <img class="home-hero-photo" src="site-images/operacao-central.png" alt="" aria-hidden="true" />
         <canvas class="hero-canvas" data-network-canvas aria-hidden="true"></canvas>
         <div class="container">
           <div class="hero-content">
@@ -109,6 +110,23 @@
               <strong>Suporte especializado</strong>
               <span>Equipe técnica para planejamento, ativação e suporte.</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <section class="section alt home-gallery" aria-labelledby="operation-gallery-title">
+        <div class="container">
+          <div class="section-head">
+            <div><p class="eyebrow">Nossa estrutura</p><h2 id="operation-gallery-title">Tecnologia em operação.</h2></div>
+            <p class="lead">Imagens das estações de controle, conectividade e monitoramento da SKY COMPANY.</p>
+          </div>
+          <div class="grid three">
+            <figure class="event-photo-card"><img src="site-images/controle-notebook.png" alt="Notebook e telas em uma estação de controle" /><figcaption><h3>Estações de controle</h3></figcaption></figure>
+            <figure class="event-photo-card"><img src="site-images/controle-evento.png" alt="Monitores e notebooks em uma sala de controle" /><figcaption><h3>Operação de eventos</h3></figcaption></figure>
+            <figure class="event-photo-card"><img src="site-images/monitoramento-cftv.png" alt="Painel de câmeras de monitoramento" /><figcaption><h3>Monitoramento</h3></figcaption></figure>
+            <figure class="event-photo-card"><img src="site-images/operacao-central.png" alt="Sala de operação com várias estações de trabalho" /><figcaption><h3>Central de operação</h3></figcaption></figure>
           </div>
         </div>
       </section>
@@ -339,49 +357,41 @@
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer home-footer">
       <div class="container">
-        <div class="footer-grid">
-          <div>
-            <a class="logo" href="index.html">
-              <span class="logo-mark">SKY</span>
-              <span>SKY COMPANY<small>Tecnologia para eventos</small></span>
-            </a>
-            <p>
-              Empresa especializada em tecnologia, conectividade, internet e soluções para empresas e eventos.
-            </p>
-            <p class="fine-print">Informações institucionais pendentes devem ser preenchidas com dados oficiais da SKY COMPANY.</p>
-          </div>
-          <div>
-            <h3>Serviços</h3>
-            <ul class="footer-list">
-              <li><a href="solucoes/internet-dedicada/">Internet dedicada</a></li>
-              <li><a href="eventos/">Internet para eventos</a></li>
-              <li><a href="solucoes/wifi-corporativo/">Wi‑Fi corporativo</a></li>
-              <li><a href="solucoes/locacao-equipamentos/">Locação de equipamentos</a></li>
+        <div class="home-footer-grid">
+          <section class="home-footer-company" aria-label="Informações da empresa">
+            <div class="home-footer-brandline">
+              <a href="index.html" aria-label="SKY COMPANY início"><img src="site-images/logo-energia.png" alt="SKY COMPANY" /></a>
+              <span>Sky Comunicação e Multimídia Ltda ME</span>
+            </div>
+            <p class="home-footer-tagline">Empresa especializada em tecnologia</p>
+            <ul class="home-footer-details">
+              <li><span>TEL :</span> <a href="tel:+551142213720">(11) 4221-3720</a></li>
+              <li><span>E-mail:</span> <a href="mailto:comercial@skycompany.com.br">comercial@skycompany.com.br</a></li>
+              <li><span>Local :</span> São Caetano do Sul - SP</li>
             </ul>
-          </div>
-          <div>
-            <h3>Atendimento</h3>
-            <ul class="footer-list">
-              <li><a href="orcamento/">Solicitar orçamento</a></li>
-              <li><a href="suporte/">Suporte</a></li>
-              <li><a href="area-do-cliente/">Área do Cliente</a></li>
-              <li><a href="contato/">Contato</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Contato</h3>
-            <ul class="footer-list">
-              <li>WhatsApp: preencher com número oficial</li>
-              <li>E-mail: contato@skycompany.com.br</li>
-              <li>Telefone: (11) 4221-3720</li>
-              <li>Endereço: preencher com endereço oficial atual</li>
-              <li>Horário: preencher com horário oficial</li>
-            </ul>
-          </div>
+          </section>
+          <section class="home-footer-navcol" aria-label="Redes sociais e navegação">
+            <div class="home-footer-social" aria-label="Redes sociais">
+              <span class="home-social-badge" aria-label="Facebook">f</span>
+              <span class="home-social-badge" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"></rect><circle cx="12" cy="12" r="3.5"></circle><circle class="social-dot" cx="17.5" cy="6.8" r="1"></circle></svg></span>
+              <span class="home-social-badge home-social-youtube" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7.2a2.8 2.8 0 0 0-2-2C17.2 4.7 12 4.7 12 4.7s-5.2 0-7 .5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2.5 12 29 29 0 0 0 3 16.8a2.8 2.8 0 0 0 2 2c1.8.5 7 .5 7 .5s5.2 0 7-.5a2.8 2.8 0 0 0 2-2A29 29 0 0 0 21.5 12a29 29 0 0 0-.5-4.8Z"></path><path class="play" d="m10 9 5 3-5 3Z"></path></svg></span>
+            </div>
+            <nav class="home-footer-nav" aria-label="Navegação do rodapé">
+              <a href="index.html">Início</a>
+              <a href="sobre/">Sobre nós</a>
+              <a href="solucoes/">Serviços</a>
+              <a href="solucoes/locacao-equipamentos/">Locações</a>
+              <a href="contato/">Contato</a>
+            </nav>
+          </section>
+          <aside class="home-footer-energy">
+            <p>Conheça também a <strong>SKY ENERGIA</strong></p>
+            <a href="https://www.skyenergia.com.br/" target="_blank" rel="noopener noreferrer">www.skyenergia.com.br</a>
+          </aside>
         </div>
-        <div class="footer-bottom">
+        <div class="home-footer-bottom">
           <span>© SKY COMPANY. Todos os direitos reservados.</span>
           <span><a href="politica-de-privacidade/">Política de privacidade</a> · <a href="termos-de-uso/">Termos de uso</a> · LGPD</span>
         </div>
