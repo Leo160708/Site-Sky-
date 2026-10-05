@@ -1132,12 +1132,13 @@ textarea:focus {
 /* Homepage image gallery and reference footer */
 .hero {
   background-image: none;
+  background-color: #08121f;
 }
 
 .home-hero-photo {
   position: absolute;
   inset: 0;
-  z-index: -3;
+  z-index: -1;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1311,6 +1312,21 @@ textarea:focus {
 
 .home-gallery .event-photo-card img {
   aspect-ratio: 5 / 3;
+}
+
+/* Mantém a foto na camada visível, sob o véu escuro do destaque. */
+.hero .home-hero-photo {
+  z-index: -1;
+}
+
+/* Garante que as fotos da galeria preencham seus cartões. */
+.home-gallery .event-photo-card {
+  min-height: 0;
+}
+
+.home-gallery .event-photo-card img {
+  height: auto;
+  min-height: 180px;
 }
 
 @media (max-width: 860px) {
