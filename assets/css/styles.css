@@ -1459,3 +1459,57 @@ textarea:focus {
  .reference-footer-nav { border-left: 0; border-top: 1px solid #888; padding: 20px 0 0; }
  .reference-energy { grid-column: auto; }
 }
+
+/* Correções finais da página inicial e menu responsivo */
+.reference-hero { isolation: isolate; }
+.reference-hero-image { z-index: -2; }
+.reference-hero-shade { z-index: -1; }
+.reference-hero-content { z-index: 1; }
+.reference-hero-reference-copy {
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 54%;
+  transform: translate(-50%, -50%);
+  width: min(1120px, calc(100% - 40px));
+  color: rgba(255,255,255,.92);
+  font-size: clamp(2.4rem, 5.4vw, 5.4rem);
+  line-height: .95;
+  font-weight: 800;
+  pointer-events: none;
+}
+.reference-hero-content h1 { position: relative; z-index: 2; text-shadow: 0 2px 16px rgba(0,0,0,.42); }
+.reference-hero-content > p:not(.reference-kicker) { position: relative; z-index: 2; }
+.reference-hero-content .reference-button { position: relative; z-index: 2; }
+.reference-home .menu-toggle {
+ display: none;
+ width: 42px;
+ height: 42px;
+ border: 1px solid rgba(255,255,255,.5);
+ background: transparent;
+ color: #fff;
+ cursor: pointer;
+}
+@media (max-width: 800px) {
+ .reference-topbar { flex-wrap: nowrap; }
+ .reference-home .menu-toggle { display: grid; place-items: center; flex: 0 0 42px; }
+ .reference-nav {
+   order: unset;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   right: 0;
+   display: none;
+   width: 100%;
+   padding: 10px 20px 16px;
+   background: #343434;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 0;
+ }
+ .reference-home.nav-open .reference-nav,
+ .reference-home body.nav-open .reference-nav { display: flex; }
+ .reference-nav a { width: 100%; padding: 11px 0; border-top: 1px solid rgba(255,255,255,.16); }
+ .reference-home .menu-toggle { margin-left: 0; }
+ .reference-phone { margin-left: auto; }
+}
