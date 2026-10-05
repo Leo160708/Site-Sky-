@@ -1050,3 +1050,80 @@ textarea:focus {
     display: block;
   }
 }
+
+
+/* Brand and image placements */
+.logo-mark {
+  width: 54px;
+  border-radius: 0;
+  background: url("../../site-images/logo-energia.png") center / contain no-repeat;
+  color: transparent;
+  font-size: 0;
+  box-shadow: none;
+}
+
+.hero {
+  background-image: url("../../site-images/operacao-central.png");
+  background-size: cover;
+  background-position: center 54%;
+}
+
+.hero-canvas {
+  opacity: 0.38;
+}
+
+.icon-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.event-banner-section {
+  padding-top: 30px;
+}
+
+.event-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.event-photo-card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.event-photo-card img,
+.monitoring-photo {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.event-photo-card img {
+  aspect-ratio: 5 / 3;
+}
+
+.event-photo-card figcaption {
+  padding: 20px;
+}
+
+.event-photo-card figcaption h3 {
+  margin-bottom: 8px;
+}
+
+.event-photo-card figcaption p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.monitoring-photo {
+  margin-top: 18px;
+  border-radius: var(--radius);
+}
