@@ -2291,3 +2291,133 @@ textarea:focus {
     transform: translateX(50%) translateY(-6px) scale(1.01) !important;
   }
 }
+
+/* Correção de imagens: logo local e banner largo sem recorte errado */
+.reference-home .reference-logo {
+  width: 154px !important;
+  flex: 0 0 154px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.reference-home .reference-logo::after {
+  content: none !important;
+}
+
+.reference-home .reference-logo img {
+  width: 154px !important;
+  height: 56px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  filter: none !important;
+}
+
+.reference-footer-company > img {
+  width: 148px !important;
+  height: auto !important;
+  max-height: 72px;
+  object-fit: contain !important;
+  object-position: left center !important;
+  filter: none !important;
+}
+
+.reference-home .reference-hero {
+  min-height: 640px !important;
+  isolation: isolate;
+  background: linear-gradient(115deg, #ffffff 0%, #edf8ff 48%, #d6edff 100%) !important;
+}
+
+.reference-home .reference-hero::after {
+  content: none !important;
+}
+
+.reference-home .reference-hero-image {
+  inset: 0 !important;
+  z-index: -2 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  box-shadow: none !important;
+  transform: none !important;
+  filter: saturate(1.05) contrast(1.04);
+}
+
+.reference-home .reference-hero:hover .reference-hero-image {
+  transform: scale(1.018) !important;
+  box-shadow: none !important;
+  filter: saturate(1.12) contrast(1.07);
+}
+
+.reference-home .reference-hero-shade {
+  z-index: -1 !important;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(239, 248, 255, 0.9) 39%, rgba(8, 88, 160, 0.3) 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.12) 72%) !important;
+}
+
+.reference-home .reference-hero-content {
+  padding: 118px 0 !important;
+}
+
+.reference-feature-photo img,
+.reference-event-grid img,
+.reference-technology > img {
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+
+.reference-feature-photo,
+.reference-event-grid img,
+.reference-technology > img {
+  overflow: hidden;
+}
+
+.reference-feature-photo img {
+  aspect-ratio: 5 / 3 !important;
+}
+
+.reference-event-grid img {
+  aspect-ratio: 5 / 3 !important;
+}
+
+.reference-photo-band > img {
+  object-position: center center !important;
+}
+
+.reference-energy img {
+  filter: none !important;
+  width: 130px !important;
+  height: auto !important;
+}
+
+@media (max-width: 900px) {
+  .reference-home .reference-hero {
+    min-height: 620px !important;
+    padding: 0 !important;
+  }
+
+  .reference-home .reference-hero-content {
+    padding: 86px 0 96px !important;
+  }
+
+  .reference-home .reference-hero-shade {
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(239, 248, 255, 0.88) 58%, rgba(8, 88, 160, 0.22) 100%) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .reference-home .reference-logo {
+    width: 112px !important;
+    flex-basis: 112px !important;
+  }
+
+  .reference-home .reference-logo img {
+    width: 112px !important;
+    height: 42px !important;
+  }
+}
