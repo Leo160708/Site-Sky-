@@ -2116,3 +2116,178 @@ textarea:focus {
     border-top: 1px solid #d6eaff;
   }
 }
+
+/* Inicio reforcado: azul/branco visivel na primeira dobra */
+.reference-home .reference-header {
+  background: #ffffff !important;
+  color: #07345f !important;
+  border-bottom: 1px solid #cfe8ff !important;
+}
+
+.reference-home .reference-topbar {
+  min-height: 76px;
+}
+
+.reference-home .reference-logo {
+  width: 132px;
+}
+
+.reference-home .reference-logo::after {
+  content: "SKY COMPANY";
+  margin-left: 10px;
+  color: #07345f;
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.reference-home .reference-nav a,
+.reference-home .reference-phone {
+  color: #07345f !important;
+}
+
+.reference-home .reference-nav a:hover,
+.reference-home .reference-phone:hover {
+  color: #0877d8 !important;
+  transform: translateY(-2px);
+}
+
+.reference-home .reference-hero {
+  min-height: 680px;
+  background:
+    linear-gradient(115deg, #ffffff 0%, #f0f8ff 46%, #d7eeff 100%) !important;
+  color: #07345f !important;
+}
+
+.reference-home .reference-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  background-image:
+    linear-gradient(rgba(8, 119, 216, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(8, 119, 216, 0.08) 1px, transparent 1px);
+  background-size: 46px 46px;
+  mask-image: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.55) 54%, transparent 100%);
+}
+
+.reference-home .reference-hero::after {
+  content: "";
+  position: absolute;
+  right: clamp(16px, 6vw, 96px);
+  top: 50%;
+  z-index: -1;
+  width: min(46vw, 540px);
+  aspect-ratio: 1.05;
+  border: 1px solid rgba(8, 119, 216, 0.2);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 28% 24%, rgba(85, 199, 255, 0.46), transparent 28%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.84), rgba(215, 238, 255, 0.58));
+  box-shadow: 0 40px 90px rgba(8, 59, 118, 0.16);
+  transform: translateY(-46%);
+}
+
+.reference-home .reference-hero-image {
+  left: auto !important;
+  right: clamp(24px, 6vw, 110px) !important;
+  top: 50% !important;
+  bottom: auto !important;
+  z-index: 0 !important;
+  width: min(42vw, 520px) !important;
+  height: min(42vw, 520px) !important;
+  border: 1px solid rgba(8, 119, 216, 0.24);
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center center !important;
+  box-shadow: 0 34px 80px rgba(8, 59, 118, 0.24);
+  transform: translateY(-50%) !important;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, filter 0.28s ease;
+}
+
+.reference-home .reference-hero:hover .reference-hero-image {
+  transform: translateY(-52%) scale(1.025) !important;
+  box-shadow: 0 46px 110px rgba(8, 59, 118, 0.3);
+  filter: saturate(1.12) contrast(1.06);
+}
+
+.reference-home .reference-hero-shade {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(240, 248, 255, 0.94) 45%, rgba(215, 238, 255, 0.24) 100%) !important;
+}
+
+.reference-home .reference-hero-content {
+  max-width: 1180px;
+  color: #07345f !important;
+}
+
+.reference-home .reference-hero .reference-kicker {
+  color: #0877d8 !important;
+}
+
+.reference-home .reference-hero-content h1 {
+  max-width: 640px;
+  color: #07345f !important;
+  font-weight: 850;
+  text-shadow: none !important;
+}
+
+.reference-home .reference-hero-content > p:not(.reference-kicker) {
+  max-width: 610px;
+  color: #34526f !important;
+  text-shadow: none !important;
+}
+
+.reference-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.reference-home .reference-button {
+  background: linear-gradient(135deg, #0877d8, #075eac) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(8, 119, 216, 0.24) !important;
+}
+
+.reference-home .reference-button-secondary {
+  background: #ffffff !important;
+  color: #075eac !important;
+  border-color: #a9d8ff !important;
+  box-shadow: 0 14px 34px rgba(8, 59, 118, 0.12);
+}
+
+.reference-home .reference-button-secondary:hover {
+  background: #eaf6ff !important;
+  color: #064c93 !important;
+}
+
+@media (max-width: 900px) {
+  .reference-home .reference-hero {
+    min-height: auto;
+    padding: 36px 0 360px;
+  }
+
+  .reference-home .reference-hero::after {
+    top: auto;
+    right: 50%;
+    bottom: 36px;
+    width: min(86vw, 460px);
+    transform: translateX(50%);
+  }
+
+  .reference-home .reference-hero-image {
+    top: auto !important;
+    right: 50% !important;
+    bottom: 56px !important;
+    width: min(82vw, 430px) !important;
+    height: 280px !important;
+    transform: translateX(50%) !important;
+  }
+
+  .reference-home .reference-hero:hover .reference-hero-image {
+    transform: translateX(50%) translateY(-6px) scale(1.01) !important;
+  }
+}
