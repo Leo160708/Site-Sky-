@@ -2421,3 +2421,107 @@ textarea:focus {
     height: 42px !important;
   }
 }
+
+/* Ajuste final do inicio: composicao mais limpa e comercial */
+.reference-home .reference-header {
+  box-shadow: 0 12px 32px rgba(7, 52, 95, 0.08) !important;
+}
+
+.reference-home .reference-hero {
+  min-height: 660px !important;
+}
+
+.reference-home .reference-hero-shade {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(246, 251, 255, 0.96) 34%, rgba(227, 243, 255, 0.78) 56%, rgba(8, 80, 150, 0.25) 100%),
+    radial-gradient(circle at 18% 24%, rgba(8, 119, 216, 0.12), transparent 24rem) !important;
+}
+
+.reference-home .reference-hero-content {
+  padding: 108px 0 96px !important;
+}
+
+.reference-home .reference-hero-content h1 {
+  max-width: 700px !important;
+  margin-bottom: 18px;
+  font-size: clamp(2.65rem, 5vw, 5rem) !important;
+  letter-spacing: 0 !important;
+}
+
+.reference-home .reference-hero-content > p:not(.reference-kicker) {
+  max-width: 640px !important;
+  margin-bottom: 30px;
+  font-size: clamp(1.05rem, 1.7vw, 1.28rem) !important;
+}
+
+.reference-hero-proof {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  width: min(760px, 100%);
+  margin-top: 30px;
+}
+
+.reference-hero-proof span {
+  min-height: 62px;
+  display: grid;
+  place-items: center;
+  padding: 12px 14px;
+  border: 1px solid rgba(8, 119, 216, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
+  color: #07345f;
+  font-size: 0.84rem;
+  font-weight: 800;
+  text-align: center;
+  box-shadow: 0 14px 34px rgba(8, 59, 118, 0.1);
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reference-hero-proof span:hover {
+  transform: translateY(-5px);
+  border-color: rgba(8, 119, 216, 0.42);
+  box-shadow: 0 22px 50px rgba(8, 59, 118, 0.18);
+}
+
+.reference-home .reference-button {
+  border-radius: 8px !important;
+  text-transform: none;
+}
+
+.reference-home .reference-button:hover {
+  transform: translateY(-4px) !important;
+}
+
+@media (max-width: 900px) {
+  .reference-home .reference-hero {
+    min-height: auto !important;
+  }
+
+  .reference-home .reference-hero-content {
+    padding: 74px 0 82px !important;
+  }
+
+  .reference-hero-proof {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .reference-home .reference-hero-content h1 {
+    font-size: 2.38rem !important;
+  }
+
+  .reference-hero-actions {
+    width: 100%;
+  }
+
+  .reference-hero-actions .reference-button {
+    width: 100%;
+  }
+
+  .reference-hero-proof {
+    grid-template-columns: 1fr;
+  }
+}
